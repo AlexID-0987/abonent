@@ -1,0 +1,26 @@
+<body>
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+            <th>Education</th>
+            <th>Faculty</th>
+            <th>AbonentId</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let res of pe">
+            <td>{{res.id}}</td>
+            <td>{{res.name}}</td>
+            <td>{{res.surename}}</td>
+            <td>{{res.age}}</td>
+            <td><tr>{{res.education[0]}}</tr><tr>{{res.education[1]}}</tr><tr>{{res.education[2]}}</tr></td>
+            <td><tr>{{res.faculty[0]}}</tr><tr>{{res.faculty[1]}}</tr><tr>{{res.faculty[2]}}</td>
+            <td>{{res.abonentId}}</td>
+        </tr>
+    </tbody>
+</table>
+</body>

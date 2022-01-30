@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Helga",
+      "surename": "Boad",
+      "age": 24,
+      "education": [
+        "KPI",
+        "Dragomanova",
+        "Karazina"
+      ],
+      "faculty": [
+        "It",
+        "Pravo",
+        "Fisikal"
+      ],
+      "abonentId": 3
+    },
+    {
+      "name": "alex",
+      "surename": "Rewq",
+      "age": 34,
+      "education": [
+        "dfhd",
+        "uyyy",
+        "fffffff"
+      ],
+      "faculty": [
+        "dfh",
+        "yyyy",
+        "hhhh"
+      ],
+      "abonentId": "345",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

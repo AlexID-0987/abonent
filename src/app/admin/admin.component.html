@@ -1,0 +1,90 @@
+<div class="bt">
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add</button>
+</div>
+<body>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Age</th>
+                <th>Education</th>
+                <th>Faculty</th>
+                <th>AbonentId</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let res of pe1">
+                <td>{{res.id}}</td>
+                <td>{{res.name}}</td>
+                <td>{{res.surename}}</td>
+                <td>{{res.age}}</td>
+                <td><tr>{{res.education[0]}}</tr><tr>{{res.education[1]}}</tr><tr>{{res.education[2]}}</tr></td>
+                <td><tr>{{res.faculty[0]}}</tr><tr>{{res.faculty[1]}}</tr><tr>{{res.faculty[2]}}</td>
+                <td>{{res.abonentId}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </body>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Add Person</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form #addform="ngForm" (ngSubmit)="additem(addform.value)">
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" class="form-control" name="na" ngModel>
+                  </div>
+                  <div class="form-group">
+                    <label for="surename">Surename</label>
+                    <input type="text" id="surename" class="form-control" name="su" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" class="form-control" name="ag" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="ed1">Educate 1</label>
+                    <input type="text" id="ed1" class="form-control" name="e1" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="fa1">Faculty 1</label>
+                    <input type="text" id="fa1" class="form-control" name="f1" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="ed2">Educate 2</label>
+                    <input type="text" id="ed2" class="form-control" name="e2" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="fa2">Faculty 2</label>
+                    <input type="text" id="fa2" class="form-control" name="f2" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="ed3">Educate 3</label>
+                    <input type="text" id="ed3" class="form-control" name="e3" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="fa3">Faculty 3</label>
+                    <input type="text" id="fa3" class="form-control" name="f3" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="abonId">AbonentID</label>
+                    <input type="text" id="abonId" class="form-control" name="abId" ngModel>
+                </div>
+                <div>
+                <button type="submit" class="btn btn-success">Add</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>

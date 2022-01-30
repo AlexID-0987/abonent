@@ -1,0 +1,39 @@
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .nav{
+      margin: auto;
+  }
+  .btn{
+      margin: 1em;
+  }
+  .footer{
+      width: 300px;
+      height: 300px;
+      color: cornflowerblue;
+  }
+  .ng-valid[required], .ng-valid.required{
+    border: 2px solid green;
+  } 
+  .ng-invalid:not(form){
+    border: 2px solid rgb(252, 53, 53);
+  }
+  .pr{
+    margin-left: auto;
+    margin-right: 3em;
+  }

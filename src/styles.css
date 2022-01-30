@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('https://uploadrb.ru/upload/admins/picture/1237/a6c3f4259bd787aef871b86968002ab12b3da9b6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.reg{
+    margin-left:auto;
+    text-align: center;
+    
+}
+#but{
+    width: 90px;
+    height: 70px;
+    border-radius: 4em;
+    transition: all 500ms ease;
+    
+}
+#but:hover{
+ width: 100px;
+ height: 80px;
+ background-image:url("https://img.icons8.com/fluency/96/000000/super-mario.png");
+ background-repeat: no-repeat;
+ background-position: center;
+}
+form{
+    margin: 2em;
+}
