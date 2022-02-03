@@ -1,3 +1,151 @@
+<form class="f1" *ngIf="visib" #updateform="ngForm">
+<div class="f2">
+    <div class="form-group">
+        <div>
+            <label for="nam">Update Name</label>
+            <input type="text" id="nam0" name="adv1" #sp #namenew="ngModel" [(ngModel)]="NAME" required class="form-control">
+            <div class="alert alert danger" [hidden]="namenew.valid||namenew.pristine">
+                <p style="color:red">Please, enter input!</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="sur">Update surname</label>
+            <input type="text" id="sur" name="adv2" [(ngModel)]="SUR" #sp #namenew1="ngModel" required class="form-control">
+            <div class="alert alert danger" [hidden]="namenew1.valid||namenew1.pristine">
+                <p style="color:red">Please, enter input!</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="ag">Update Age</label>
+            <input type="number" id="ag" name="adv3" [(ngModel)]="AGE" #sp #namenew2="ngModel" required class="form-control" min="20" max="50">
+            <div class="alert alert danger" [hidden]="namenew2.valid||namenew2.pristine">
+                <p style="color:red">Please, enter input!</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="sur">Update Educate 1</label>
+            <input type="text" id="sur" name="adv4" [(ngModel)]="ED1" #sp #namenew3="ngModel" required class="form-control">
+            <div class="alert alert danger" [hidden]="namenew3.valid||namenew3.pristine">
+                <p style="color:red">Please, enter input!</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="sur">Update Faculty 1</label>
+            <input type="text" id="sur" name="adv5" [(ngModel)]="F1" #sp #namenew4="ngModel" required class="form-control">
+            <div class="alert alert danger" [hidden]="namenew4.valid||namenew4.pristine">
+                <p style="color:red">Please, enter input!</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="sur">Update start year educate</label>
+            <input type="number" id="sur" name="adv6" [(ngModel)]="ST1" #sp #namenew5="ngModel" required class="form-control" min="1990" max="2020">
+            <div class="alert alert danger" [hidden]="namenew5.valid||namenew5.pristine">
+                <p style="color:red">Please, enter year >1990!</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="sur">Update graduate university</label>
+            <input type="number" id="sur" name="adv7" [(ngModel)]="GR1" #sp #namenew6="ngModel" required class="form-control" min="1990" max="2020">
+            <div class="alert alert danger" [hidden]="namenew6.valid||namenew6.pristine">
+                <p style="color:red">Please, enter graduate!</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="sur">Update Educate 2</label>
+            <input type="text" id="sur" name="adv8" [(ngModel)]="ED2" #sp #namenew7="ngModel" required class="form-control">
+            <div class="alert alert danger" [hidden]="namenew7.valid||namenew7.pristine">
+                <p style="color:red">Please, enter input!</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="sur">Update Faculty 2</label>
+            <input type="text" id="sur" name="adv9" [(ngModel)]="F2" #sp #namenew8="ngModel" required class="form-control">
+            <div class="alert alert danger" [hidden]="namenew8.valid||namenew8.pristine">
+                <p style="color:red">Please, enter input!</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="sur">Update start year educate</label>
+            <input type="number" id="sur" name="adv10" [(ngModel)]="ST2" #sp #namenew9="ngModel" required class="form-control" min="1990" max="2020">
+            <div class="alert alert danger" [hidden]="namenew9.valid||namenew9.pristine">
+                <p style="color:red">Please, enter year >1990!</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="sur">Update graduate university</label>
+            <input type="number" id="sur" name="adv11" [(ngModel)]="GR2" #sp #namenew10="ngModel" required class="form-control" min="1990" max="2020">
+            <div class="alert alert danger" [hidden]="namenew10.valid||namenew10.pristine">
+                <p style="color:red">Please, enter graduate!</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="sur">Update Educate 3</label>
+            <input type="text" id="sur" name="adv12" [(ngModel)]="ED3" #sp #namenew11="ngModel" required class="form-control">
+            <div class="alert alert danger" [hidden]="namenew11.valid||namenew11.pristine">
+                <p style="color:red">Please, enter input!</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="sur">Update Faculty 3</label>
+            <input type="text" id="sur" name="adv13" [(ngModel)]="F3" #sp #namenew12="ngModel" required class="form-control">
+            <div class="alert alert danger" [hidden]="namenew12.valid||namenew12.pristine">
+                <p style="color:red">Please, enter input!</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="sur">Update start year educate</label>
+            <input type="number" id="sur" name="adv14" [(ngModel)]="ST3" #sp #namenew13="ngModel" required class="form-control" min="1990" max="2020">
+            <div class="alert alert danger" [hidden]="namenew13.valid||namenew13.pristine">
+                <p style="color:red">Please, enter year >1990!</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="sur">Update graduate university</label>
+            <input type="number" id="sur" name="adv15" [(ngModel)]="GR3" #sp #namenew14="ngModel" required class="form-control" min="1990" max="2020">
+            <div class="alert alert danger" [hidden]="namenew14.valid||namenew14.pristine">
+                <p style="color:red">Please, enter graduate!</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="sur">Update abonentID</label>
+            <input type="number" id="sur" name="adv16" [(ngModel)]="ABID" #sp #namenew15="ngModel" required class="form-control">
+            <div class="alert alert danger" [hidden]="namenew15.valid||namenew15.pristine">
+                <p style="color:red">Please, enter abonent ID!</p>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
 <div class="bt">
     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add</button>
 </div>
@@ -11,7 +159,12 @@
                 <th>Age</th>
                 <th>Education</th>
                 <th>Faculty</th>
+                <th>Start</th>
+                <th>Graduate</th>
                 <th>AbonentId</th>
+                <th>Delete</th>
+                <th>Activate Update</th>
+                <th>Update</th>
             </tr>
         </thead>
         <tbody>
@@ -22,7 +175,24 @@
                 <td>{{res.age}}</td>
                 <td><tr>{{res.education[0]}}</tr><tr>{{res.education[1]}}</tr><tr>{{res.education[2]}}</tr></td>
                 <td><tr>{{res.faculty[0]}}</tr><tr>{{res.faculty[1]}}</tr><tr>{{res.faculty[2]}}</td>
+                    <td><tr>{{res.start[0]}}</tr><tr>{{res.start[1]}}</tr><tr>{{res.start[2]}}</tr></td>
+                    <td><tr>{{res.graduate[0]}}</tr><tr>{{res.graduate[1]}}</tr><tr>{{res.graduate[2]}}</tr></td>
                 <td>{{res.abonentId}}</td>
+                <td>
+                    <div>
+                        <button type="button" class="btn btn-danger" (click)="delete(res.id)">Delete</button> 
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <input type="checkbox" (click)="chac()" />
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button type="button" class="btn btn-warning" (click)="update(res.id)">Update</button> 
+                    </div>
+                </td>
             </tr>
         </tbody>
     </table>
@@ -38,52 +208,125 @@
               <form #addform="ngForm" (ngSubmit)="additem(addform.value)">
                   <div class="form-group">
                       <label for="name">Name</label>
-                      <input type="text" id="name" class="form-control" name="na" ngModel>
+                      <input type="text" #spy #name="ngModel" id="name" required class="form-control" name="na" placeholder="Name" ngModel>
+                      <div class="alert alert danger" [hidden]="name.valid||name.pristine">
+                          <p style="color:red">Please, enter input!</p>
+                      </div>
                   </div>
                   <div class="form-group">
                     <label for="surename">Surename</label>
-                    <input type="text" id="surename" class="form-control" name="su" ngModel>
+                    <input type="text" #spy1 #name1="ngModel" id="surename" required class="form-control" name="su" placeholder="Surname" ngModel>
+                    <div class="alert alert danger" [hidden]="name1.valid||name1.pristine">
+                        <p style="color:red">Please, enter input!</p>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="age">Age</label>
-                    <input type="number" id="age" class="form-control" name="ag" ngModel>
+                    <input type="number" #spy2 #name2="ngModel" required id="age" class="form-control" name="ag" min="20" max="50" ngModel>
+                    <div class="alert alert danger" [hidden]="name2.valid||name2.pristine">
+                        <p style="color:red">Please, enter age min=20 and max=50!</p>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="ed1">Educate 1</label>
-                    <input type="text" id="ed1" class="form-control" name="e1" ngModel>
+                    <input type="text" #spy3 #name3="ngModel" required id="ed1" class="form-control" name="e1" ngModel>
+                    <div class="alert alert danger" [hidden]="name3.valid||name3.pristine">
+                        <p style="color:red">Please, enter input!</p>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="fa1">Faculty 1</label>
-                    <input type="text" id="fa1" class="form-control" name="f1" ngModel>
+                    <input type="text" #spy4 #name4="ngModel" required id="fa1" class="form-control" name="f1" ngModel>
+                    <div class="alert alert danger" [hidden]="name4.valid||name4.pristine">
+                        <p style="color:red">Please, enter input!</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="e1">Start 1</label>
+                    <input type="number" #spy5 #name5="ngModel" required id="ea1" class="form-control" name="ea1" ngModel min="1990" max="2020">
+                    <div class="alert alert danger" [hidden]="name5.valid||name5.pristine">
+                        <p style="color:red">Please, enter number >1990!</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="e1">Graduate 1</label>
+                    <input type="number" #spy15 #name15="ngModel" required id="gr1" class="form-control" name="gr1" ngModel min="1990" max="2020">
+                    <div class="alert alert danger" [hidden]="name15.valid||name15.pristine">
+                        <p style="color:red">Please, enter number max 2020!</p>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="ed2">Educate 2</label>
-                    <input type="text" id="ed2" class="form-control" name="e2" ngModel>
+                    <input type="text" #spy6 #name6="ngModel" required id="ed2" class="form-control" name="e2" ngModel>
+                    <div class="alert alert danger" [hidden]="name6.valid||name6.pristine">
+                        <p style="color:red">Please, enter input!</p>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="fa2">Faculty 2</label>
-                    <input type="text" id="fa2" class="form-control" name="f2" ngModel>
+                    <input type="text" #spy7 #name7="ngModel" required id="fa2" class="form-control" name="f2" ngModel>
+                    <div class="alert alert danger" [hidden]="name7.valid||name7.pristine">
+                        <p style="color:red">Please, enter input!</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="e2">Start 2</label>
+                    <input type="number" #spy8 #name8="ngModel" required id="ea2" class="form-control" min="1990" max="2020" name="ea2" ngModel>
+                    <div class="alert alert danger" [hidden]="name8.valid||name8.pristine">
+                        <p style="color:red">Please, enter number min 1990!</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="e1">Graduate 2</label>
+                    <input type="number" #spy16 #name16="ngModel" required id="gr2" class="form-control" name="gr2" ngModel min="1990" max="2020">
+                    <div class="alert alert danger" [hidden]="name16.valid||name16.pristine">
+                        <p style="color:red">Please, enter number max 2020!</p>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="ed3">Educate 3</label>
-                    <input type="text" id="ed3" class="form-control" name="e3" ngModel>
+                    <input type="text" #spy9 #name9="ngModel" required id="ed3" class="form-control" name="e3" ngModel>
+                    <div class="alert alert danger" [hidden]="name9.valid||name9.pristine">
+                        <p style="color:red">Please, enter input!</p>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="fa3">Faculty 3</label>
-                    <input type="text" id="fa3" class="form-control" name="f3" ngModel>
+                    <input type="text" #spy10 #name10="ngModel" required id="fa3" class="form-control" name="f3" ngModel>
+                    <div class="alert alert danger" [hidden]="name10.valid||name10.pristine">
+                        <p style="color:red">Please, enter input!</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="e3">Start 3</label>
+                    <input type="number" #spy11 #name11="ngModel" required id="ea3" class="form-control" name="ea3" min="1990" max="2020" ngModel>
+                    <div class="alert alert danger" [hidden]="name11.valid||name11.pristine">
+                        <p style="color:red">Please, enter number min 1990!</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="e1">Graduate 3</label>
+                    <input type="number" #spy17 #name17="ngModel" required id="gr3" class="form-control" name="gr3" ngModel min="1990" max="2020">
+                    <div class="alert alert danger" [hidden]="name17.valid||name17.pristine">
+                        <p style="color:red">Please, enter number max 2020!</p>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="abonId">AbonentID</label>
-                    <input type="text" id="abonId" class="form-control" name="abId" ngModel>
+                    <input type="text" #spy12 #name12="ngModel" required id="abonId" class="form-control" name="abId" ngModel>
+                    <div class="alert alert danger" [hidden]="name12.valid||name12.pristine">
+                        <p style="color:red">Please, enter input!</p>
+                    </div>
                 </div>
                 <div>
-                <button type="submit" class="btn btn-success">Add</button>
+                <button type="submit" class="btn btn-success" [disabled]="!addform.form.valid" data-bs-dismiss="modal">Add</button>
+                <button type="reset" class="btn btn-success">Clear</button>
+                
                 </div>
               </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Understood</button>
             </div>
           </div>
         </div>

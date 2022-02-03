@@ -4,3 +4,21 @@ table{
 .bt{
     margin: 1em;
 }
+.ng-valid[required], .ng-valid.requared {
+    border: 2px solid green;
+}
+.ng-invalid:not(form){
+    border:2px solid red;
+}
+.f1{
+    background-color: azure ;
+}
+.f2{
+    margin: 2em;
+}
+.ng-valid[required], .ng-valid.required{
+    border: 2px solid green;
+  } 
+  .ng-invalid:not(form){
+    border: 2px solid rgb(252, 53, 53);
+  }

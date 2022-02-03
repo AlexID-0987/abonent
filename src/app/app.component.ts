@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'abonent';
-  
+  spiner=false
+  spin(){
+    this.spiner =true
+    setTimeout(()=>{
+     this.spiner=false
+    },5000)
+  }
 }

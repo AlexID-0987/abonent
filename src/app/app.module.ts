@@ -7,18 +7,22 @@ import { ContentComponent } from './content/content.component';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
+import { RedactitemComponent } from './redactitem/redactitem.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentComponent,
-    AdminComponent
+    AdminComponent,
+    RedactitemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

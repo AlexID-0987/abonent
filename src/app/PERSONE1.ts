@@ -5,5 +5,7 @@ export interface PERSONE1{
     age:Number,
     education:String[],
     faculty:String[],
+    start:String[],
+    graduate:String[],
     abonentId:Number
 }

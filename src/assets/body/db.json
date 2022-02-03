@@ -15,6 +15,16 @@
         "Pravo",
         "Fisikal"
       ],
+      "start": [
+        "1999",
+        "2005",
+        "2007"
+      ],
+      "graduate": [
+        "2003",
+        "2009",
+        "2010"
+      ],
       "abonentId": 3
     },
     {
@@ -32,7 +42,98 @@
         "hhhh"
       ],
       "abonentId": "345",
+      "start": [
+        "1995",
+        "2005",
+        "2007"
+      ],
+      "graduate": [
+        "1999",
+        "2009",
+        "2011"
+      ],
       "id": 2
+    },
+    {
+      "name": "Fill",
+      "surename": "Rewq",
+      "age": 23,
+      "education": [
+        "Hogvards",
+        "-",
+        "Riga"
+      ],
+      "faculty": [
+        "Mistical",
+        "-",
+        "History"
+      ],
+      "start": [
+        1990,
+        1990,
+        1990
+      ],
+      "graduate": [
+        1996,
+        1998,
+        2020
+      ],
+      "abonentId": "56",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "name": " Frenc",
+      "surename": "Dou",
+      "age": 50,
+      "education": [
+        "Oxford",
+        " Krakow",
+        " KPI"
+      ],
+      "faculty": [
+        " It",
+        " Himikal",
+        " Math"
+      ],
+      "start": [
+        1996,
+        1999,
+        2007
+      ],
+      "graduate": [
+        2020,
+        2004,
+        2013
+      ],
+      "abonentId": 2013
+    },
+    {
+      "name": "alex",
+      "surename": "Qwenn",
+      "age": 45,
+      "education": [
+        "Hogvards",
+        "-",
+        "-"
+      ],
+      "faculty": [
+        "Mistical",
+        "-",
+        "-"
+      ],
+      "start": [
+        2020,
+        1990,
+        1990
+      ],
+      "graduate": [
+        2020,
+        1990,
+        1990
+      ],
+      "abonentId": "789",
+      "id": 7
     }
   ],
   "comments": [

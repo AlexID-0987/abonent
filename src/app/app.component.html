@@ -7,13 +7,14 @@
   />
   <h2>Abonent</h2>
   <div class="reg">
-    <button type="button" class="btn btn-danger" id=but data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button type="button" class="btn btn-danger" id=but data-bs-toggle="modal"  (click)="spin()" data-bs-target="#exampleModal">
       Regist
     </button>
   </div> 
   <div class="pr">
     <h2>Hello {{name.value}}!</h2>
   </div>
+
 </div>
 
 
@@ -37,6 +38,11 @@
             <p>Hello! Enter name!<p>
           </div>
           </form>
+          <div class="d-flex justify-content-center" *ngIf="spiner" id="sp">
+            <div class="spinner-grow spinner-grow-sm" role="status" id="sp1">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary" routerLink="/content" [disabled]="!user.form.valid" data-bs-dismiss="modal">User</button>
